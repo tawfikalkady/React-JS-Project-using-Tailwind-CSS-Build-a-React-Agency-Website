@@ -1,0 +1,64 @@
+https://tailwindcss.com/docs/guides/vite#react
+npm create vite@latest my-project -- --template react
+npm install
+npm run dev
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+npm run dev
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
