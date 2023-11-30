@@ -1,65 +1,34 @@
-https://tailwindcss.com/docs/guides/vite#react
-npm create vite@latest my-project -- --template react
-npm install
-npm run dev
-npm install -D tailwindcss postcss autoprefixer
-npx tailwindcss init -p
-npm run dev
-https://fonts.google.com/specimen/Inter
-npm i react-scroll
-https://www.npmjs.com/package/react-icons
-npm install react-icons --save
-https://www.flowbite-react.com/docs/getting-started/introduction
-npm i flowbite-react
-https://www.flowbite-react.com/docs/getting-started/introduction
-'node_modules/flowbite-react/lib/esm/**/*.js',
-require('flowbite/plugin')
-
-https://www.flowbite-react.com/docs/components/carousel
-
-'use client';
-
-import { Carousel } from 'flowbite-react';
-
-function Component() {
-  return (
-    <div className="h-56 sm:h-64 xl:h-80 2xl:h-96">
-      <Carousel>
-        <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
-          Slide 1
-        </div>
-        <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
-          Slide 2
-        </div>
-        <div className="flex h-full items-center justify-center bg-gray-400 dark:bg-gray-700 dark:text-white">
-          Slide 3
-        </div>
-      </Carousel>
-    </div>
-  );
-}
-
-
-https://www.flowbite-react.com/docs/components/footer
-
-
-'use client';
+import React from 'react';
 
 import { Footer } from 'flowbite-react';
 import { BsDribbble, BsFacebook, BsGithub, BsInstagram, BsTwitter } from 'react-icons/bs';
 
-function Component() {
-  return (
-    <Footer container>
+import logo from '../assets/logo.png'
+
+const MyFooter = () => {
+    return (
+        <div>
+                <Footer container>
       <div className="w-full">
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
-          <div>
+          <div className='space-y-4 mb-8 '>
             <Footer.Brand
-              href="https://flowbite.com"
-              src="https://flowbite.com/docs/images/logo.svg"
-              alt="Flowbite Logo"
-              name="Flowbite"
+
+
+
+            //   href="https://flowbite.com"
+            //   src="https://flowbite.com/docs/images/logo.svg"
+            //   alt="Flowbite Logo"
+            //   name="Flowbite"
             />
+                                <a href="" className='text-2xl font-semibold flex items-center space-x-3  '>
+                        <img src={logo} alt="" className="w-10 inline-block items-center  " />
+                        <span className='text-[#263238]'>NEXCENT</span>
+                    </a>
+                    <div>
+                        <p className='mb-1'>Copyright 2020 Nexent ltd.</p>
+                        <p>All rights reservsd </p>
+                    </div>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
             <div>
@@ -98,58 +67,8 @@ function Component() {
         </div>
       </div>
     </Footer>
-  );
-}
+        </div>
+    );
+};
 
-
-npm run dev
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+export default MyFooter;
