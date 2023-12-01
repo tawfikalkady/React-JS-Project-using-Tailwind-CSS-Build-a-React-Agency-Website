@@ -104,7 +104,8 @@ function Component() {
 
 npm run dev
 
-
+https://www.npmjs.com/package/framer-motion
+npm i framer-motion
 
 
 
